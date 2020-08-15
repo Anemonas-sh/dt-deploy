@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import "node_modules/sass-material-colors/sass/sass-material-colors-classes";
+
+@import "theme";
+@import "colors";
+@import "charts";
+@import "dimensions";
+@import "util";
+@import "variables";
+@import "buttons";
+@import "cards";
+
+//html, body {
+//  height: 100%;
+//}
+
+body {
+  background: white;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', "Segoe UI", Arial, monospace;
+  text-align: left;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+div.content {
+  padding: 16px;
+
+  div.dashboard-section {
+    padding-bottom: 12px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+div.alert {
+  padding: 0 12px;
+  display: inline-block;
+
+  &.danger {
+    color: mat-color($datatour-app-warn);
+  }
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+table.card {
+  border-spacing: 0;
+
+  th {
+    color: rgba(0, 0, 0, .54);
+  }
+
+  td {
+    color: rgba(0, 0, 0, .8);
+  }
+
+  td,
+  th {
+    padding: 12px 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+    &:first-child {
+      padding-left: 16px;
+    }
+
+    &:last-child {
+      padding-right: 16px;
+    }
+  }
+
+  tr:last-child {
+    td {
+      border-bottom: none;
+    }
+  }
+}
+
+
+.logo,
+.logo-right {
+  min-height: 48px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo {
+  background-image: url("src/assets/images/icon.png");
+}
+
+.logo-right {
+  background-image: url("src/assets/images/logo-right.png");
+}

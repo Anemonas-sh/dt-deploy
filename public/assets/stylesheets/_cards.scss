@@ -1,0 +1,82 @@
+@import "variables";
+
+div.hover-card {
+  position: relative;
+  padding: 30px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  color: black;
+  cursor: default;
+
+  &:hover {
+    color: white;
+    background-color: $primary;
+    box-shadow: 0 4px 20px -5px rgba(76, 175, 80, 0.4);
+    transform: translateY(-7px);
+
+    a {
+      color: white;
+    }
+
+    div.circle-icon {
+      background-color: white;
+      box-shadow: 0 4px 20px -5px rgba(76, 175, 80, 0.4);
+
+      mat-icon {
+        color: $primary;
+      }
+    }
+
+    div.title {
+      color: white;
+    }
+
+    div.content {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  a {
+    color: $primary;
+  }
+
+  div.circle-icon {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: -50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: $primary;
+
+    mat-icon {
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 2rem;
+      width: fit-content;
+      height: fit-content;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  div.title {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  div.circle-icon + div.title {
+    margin-top: 20px;
+  }
+
+  div.content {
+    font-weight: 300;
+    line-height: 1.7;
+    color: grey;
+  }
+}

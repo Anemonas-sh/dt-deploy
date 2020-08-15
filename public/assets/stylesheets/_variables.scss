@@ -1,0 +1,7 @@
+@import "theme";
+
+// Create your Sass color vars (will be available in all the project)
+$primary: mat-color($datatour-app-primary);
+$secondary: mat-color($datatour-app-primary, 200);
+$accent: mat-color($datatour-app-accent);
+$warn: mat-color($datatour-app-warn);

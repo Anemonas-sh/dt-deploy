@@ -7,7 +7,6 @@ const request = require('request');
 const cors = require('cors');
 const express = require('express');
 const bodyParser = require('body-parser');
-const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 const { Client } = require('pg');

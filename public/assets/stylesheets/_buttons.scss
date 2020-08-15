@@ -1,0 +1,30 @@
+@import "variables";
+
+button {
+  border: none;
+  outline: none;
+}
+
+.btn {
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 8px 26px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+  border: 1px solid lightgrey;
+
+  &.btn-primary {
+    display: inline-block;
+    border-width: 2px;
+    background: $primary;
+    border-color: $primary;
+    color: #fff !important;
+    position: relative;
+    box-shadow: 0 4px 20px -5px rgba(76, 175, 80, 0.4);
+
+    &:hover {
+      box-shadow: 0 5px 30px -5px rgba(76, 175, 80, 0.7);
+    }
+  }
+}
